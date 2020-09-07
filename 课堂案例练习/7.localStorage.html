@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    let age = localStorage.age;
+    let age2 = localStorage['age'];
+    let bir = localStorage['bir'];
+    let pwd = localStorage.getItem("pwd");
+    console.log(age, age2, bir, pwd)
+
+    for (let n = 0; n < localStorage.length; n++) {
+        console.log("第" + n + "条数据key为" + localStorage.key(n) + ",value为" + localStorage.getItem(localStorage.key(n)))
+    }
+
+</script>
+
+</body>
+</html>

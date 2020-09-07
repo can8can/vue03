@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let local = localStorage;
+
+    local.student = {
+        id: 1,
+        username: "谢锋",
+        age: 66,
+    }
+    console.log(typeof local.student)
+
+    let student2 = {
+        id: 2,
+        username: "小白",
+        age: 18,
+    }
+    local.stu = JSON.stringify(student2);
+
+    let stu2 = JSON.parse(local.stu);
+    console.log(stu2.username)
+
+</script>
+
+</body>
+</html>
